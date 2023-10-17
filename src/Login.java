@@ -84,9 +84,10 @@ public class Login extends JFrame implements ActionListener {
         if(a.getSource()==login){
             String card=cardtxt.getText();
             String pass=pintxt.getText();
+            
             System.out.println(card);
             System.out.println(pass);
-            String Q1="select pin from account_info where acc_no='"+card+"' and pin='"+pass+"'";
+            String Q1="select pin from account__info where acc_no='"+card+"' and pin='"+pass+"'";
             try{
                  Cnction connection=new Cnction();
                  
